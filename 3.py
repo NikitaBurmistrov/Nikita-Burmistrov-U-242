@@ -1,12 +1,13 @@
-a = int(input('Введите 1 число: '))
-b = int(input('Введите 2 число: '))
-c = int(input('Введите 3 число: '))
-ans = []
-if 1 <= a <= 3:
-    ans.append(a)
-if 1 <= b <= 3:
-    ans.append(b)
-if 1 <= c <= 3:
-    ans.append(c)
+s = input()
+count = 0
 
-print(*ans)
+text = ""
+
+for i in s:
+    if i == ".":
+        count += 1
+    else:
+        text += i
+
+print(text,"Изменнеая строка")
+print(count,"Количество удаленных точек")

@@ -1,5 +1,14 @@
-import math
-x=int(input("Введите переменную х:"))
-t=int(input("Введите переменную t:"))
-z=((9*math.pi*t+10*math.cos(x))/(math.sqrt(t)-math.fabs(math.sin(t))))*math.pow(math.e,x)
-print("z = {0:.2f}".format(z))
+s = input()
+count = 0
+
+text = ""
+
+for i in s:
+    if i == ":":
+        text += "%"
+        count += 1
+    else:
+        text += i
+
+print(text,"Изменнеая строка")
+print(count,"Количество замен")
